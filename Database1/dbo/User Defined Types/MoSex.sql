@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoSex]
+    FROM CHAR (1) NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoSex] TO PUBLIC;
+

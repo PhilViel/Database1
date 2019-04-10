@@ -1,0 +1,2 @@
+﻿CREATE USER [UNIVERSITAS\shinken-svc] FOR LOGIN [UNIVERSITAS\shinken-svc];
+

@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[tblTEMP_RapportStats_S150_EvolutionNombreBeneficiaires] (
+    [Du]                               DATETIME      NULL,
+    [Au]                               DATETIME      NULL,
+    [RepID]                            INT           NULL,
+    [RepCode]                          VARCHAR (75)  NULL,
+    [RepNom]                           VARCHAR (86)  NULL,
+    [Directeur]                        VARCHAR (86)  NULL,
+    [RegimeSelectionne]                VARCHAR (100) NULL,
+    [Regime]                           VARCHAR (50)  NOT NULL,
+    [BeneficiaryID]                    INT           NOT NULL,
+    [BeneficiaryPrenom]                VARCHAR (35)  NULL,
+    [BeneficiaryNom]                   VARCHAR (50)  NULL,
+    [BeneficiaryID_Debut]              INT           NULL,
+    [EstBenefAdmissibleDebut]          INT           NULL,
+    [NbPlansActifsDebut]               INT           NULL,
+    [NbPlansAvantAdmissibiliteDebut]   INT           NULL,
+    [NbPlansApresAdmissibiliteDebut]   INT           NULL,
+    [NbPlansActifsDepuisDebut]         INT           NULL,
+    [NbPlansResOUTCompleteDepuisDebut] INT           NULL,
+    [NbPlansFermePAE_Periode]          INT           NULL,
+    [NbPlansFermeAutreDepuisDebut]     INT           NULL,
+    [NbPlansActifsFin]                 INT           NULL,
+    [NbPlansAvantAdmissibiliteFin]     INT           NULL,
+    [NbPlansApresAdmissibiliteFin]     INT           NULL,
+    [BeneficiaryID_Fin]                INT           NULL
+);
+

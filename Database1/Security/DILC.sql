@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [DILC]
+    AUTHORIZATION [dbo];
+

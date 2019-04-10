@@ -1,0 +1,2 @@
+﻿CREATE USER [UNIVERSITAS\sbelanger] FOR LOGIN [UNIVERSITAS\sbelanger];
+

@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoState]
+    FROM CHAR (4) NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoState] TO PUBLIC;
+

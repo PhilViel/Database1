@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [svc-elk]
+    WITH PASSWORD = N'{:_qaa1SKjs5qjgyv{bQjc {msFT7_&#$!~<g{gpjWineuyI', SID = 0x086C95854FDDB343809ED7EC984133F8, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

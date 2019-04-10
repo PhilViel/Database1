@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoRefType]
+    FROM VARCHAR (3) NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoRefType] TO PUBLIC;
+

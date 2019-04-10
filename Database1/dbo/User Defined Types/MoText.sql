@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoText]
+    FROM TEXT NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoText] TO PUBLIC;
+

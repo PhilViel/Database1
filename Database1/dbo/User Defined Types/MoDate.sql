@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoDate]
+    FROM DATETIME NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoDate] TO PUBLIC;
+

@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[UnTimeOut]
+    FROM SMALLINT NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[UnTimeOut] TO PUBLIC;
+

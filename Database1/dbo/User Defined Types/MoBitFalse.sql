@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoBitFalse]
+    FROM BIT NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoBitFalse] TO PUBLIC;
+

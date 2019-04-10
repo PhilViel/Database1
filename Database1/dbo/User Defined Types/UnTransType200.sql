@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[UnTransType200]
+    FROM SMALLINT NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[UnTransType200] TO PUBLIC;
+

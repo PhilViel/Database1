@@ -1,0 +1,3 @@
+﻿CREATE USER [cr]
+    WITH DEFAULT_SCHEMA = [cr];
+

@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[UnReason950]
+    FROM CHAR (1) NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[UnReason950] TO PUBLIC;
+

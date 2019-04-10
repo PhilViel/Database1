@@ -1,0 +1,2 @@
+﻿CREATE USER [UNIVERSITAS\jpbolduc] FOR LOGIN [UNIVERSITAS\jpbolduc];
+

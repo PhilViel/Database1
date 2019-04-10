@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoZipCode]
+    FROM VARCHAR (10) NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoZipCode] TO PUBLIC;
+

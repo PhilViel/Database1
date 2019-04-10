@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoPct100Pos]
+    FROM DECIMAL (7, 4) NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoPct100Pos] TO PUBLIC;
+

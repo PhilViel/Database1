@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[UnModalType]
+    FROM SMALLINT NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[UnModalType] TO PUBLIC;
+

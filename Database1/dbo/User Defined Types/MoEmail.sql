@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoEmail]
+    FROM VARCHAR (100) NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoEmail] TO PUBLIC;
+

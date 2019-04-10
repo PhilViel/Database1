@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoLoginName]
+    FROM VARCHAR (24) NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoLoginName] TO PUBLIC;
+

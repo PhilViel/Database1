@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoOrder]
+    FROM SMALLINT NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoOrder] TO PUBLIC;
+

@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[PreDemandeKofax] (
+    [Id]            INT           NOT NULL,
+    [Cote]          VARCHAR (MAX) NULL,
+    [Date]          VARCHAR (MAX) NULL,
+    [Categorie]     VARCHAR (MAX) NULL,
+    [Abr]           VARCHAR (MAX) NULL,
+    [App]           VARCHAR (MAX) NULL,
+    [Tit]           VARCHAR (MAX) NULL,
+    [Conv]          VARCHAR (MAX) NULL,
+    [Autr]          VARCHAR (MAX) NULL,
+    [Edit]          VARCHAR (MAX) NULL,
+    [Num]           VARCHAR (MAX) NULL,
+    [FormType]      VARCHAR (MAX) NULL,
+    [Lot]           VARCHAR (MAX) NULL,
+    [Signification] VARCHAR (MAX) NULL,
+    [NomFichier]    VARCHAR (MAX) NULL,
+    [Code]          VARCHAR (MAX) NULL,
+    [Cycl]          VARCHAR (MAX) NULL,
+    [Disp]          VARCHAR (MAX) NULL,
+    [Droi]          VARCHAR (MAX) NULL,
+    [Identifiant]   VARCHAR (MAX) NULL,
+    [KofaxDocID]    INT           NULL,
+    CONSTRAINT [PK_PreDemandeKofax] PRIMARY KEY CLUSTERED ([Id] ASC) WITH (FILLFACTOR = 90)
+);
+

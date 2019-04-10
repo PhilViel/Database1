@@ -1,0 +1,45 @@
+﻿CREATE TABLE [dbo].[tblTEMP_InformationsIQEEPourPAE] (
+    [iID_IQEE_PAE]              INT        IDENTITY (1, 1) NOT NULL,
+    [iID_Convention]            INT        NOT NULL,
+    [iID_Operation]             INT        NOT NULL,
+    [iID_Operation_Cheque]      INT        NOT NULL,
+    [dtDate]                    DATETIME   NOT NULL,
+    [bPAE_Destine_Beneficiaire] BIT        NOT NULL,
+    [bBeneficiare_Quebec]       BIT        NOT NULL,
+    [bConvention_Rejetee]       BIT        NOT NULL,
+    [bConvention_Fermee]        BIT        NOT NULL,
+    [bRempl_Benef_Non_Reconnu]  BIT        NOT NULL,
+    [bTransfert_Non_Autorise]   BIT        NOT NULL,
+    [bRetrait_Premature]        BIT        NOT NULL,
+    [mMontant_PAE]              MONEY      NULL,
+    [mJVM]                      MONEY      NULL,
+    [fPourcentage_PAE]          FLOAT (53) NULL,
+    [mReponse_Credit_Base]      MONEY      NULL,
+    [mReponse_Majoration]       MONEY      NULL,
+    [mReponse_Interets_RQ]      MONEY      NULL,
+    [mCredit_Base_Deja_Verse]   MONEY      NULL,
+    [mMajoration_Deja_Verse]    MONEY      NULL,
+    [mInterets_RQ_Deja_Verse]   MONEY      NULL,
+    [mCredit_Base_Verse]        MONEY      NULL,
+    [mMajoration_Verse]         MONEY      NULL,
+    [mInterets_RQ_Verse]        MONEY      NULL,
+    [mSolde_Credit_Base]        MONEY      NULL,
+    [mSolde_Majoration]         MONEY      NULL,
+    [mSolde_Interets_RQ]        MONEY      NULL,
+    [mSolde_Interets_IQI]       MONEY      NULL,
+    [mSolde_Interets_ICQ]       MONEY      NULL,
+    [mSolde_Interets_IMQ]       MONEY      NULL,
+    [mSolde_Interets_IIQ]       MONEY      NULL,
+    [mSolde_Interets_III]       MONEY      NULL,
+    [mInterets_IQI_Verse]       MONEY      NULL,
+    [mInterets_ICQ_Verse]       MONEY      NULL,
+    [mInterets_IMQ_Verse]       MONEY      NULL,
+    [mInterets_IIQ_Verse]       MONEY      NULL,
+    [mInterets_III_Verse]       MONEY      NULL,
+    CONSTRAINT [PK_TEMP_InformationsIQEEPourPAE] PRIMARY KEY CLUSTERED ([iID_IQEE_PAE] ASC) WITH (FILLFACTOR = 90)
+);
+
+
+GO
+EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Table des informations IQEE pour les PAE', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'tblTEMP_InformationsIQEEPourPAE';
+

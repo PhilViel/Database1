@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [ProAcces]
+    AUTHORIZATION [dbo];
+

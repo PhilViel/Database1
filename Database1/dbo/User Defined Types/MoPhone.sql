@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoPhone]
+    FROM VARCHAR (15) NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoPhone] TO PUBLIC;
+

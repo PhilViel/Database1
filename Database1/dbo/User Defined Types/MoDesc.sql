@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoDesc]
+    FROM VARCHAR (75) NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoDesc] TO PUBLIC;
+

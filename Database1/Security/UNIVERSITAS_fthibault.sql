@@ -1,0 +1,3 @@
+﻿CREATE USER [UNIVERSITAS\fthibault] FOR LOGIN [UNIVERSITAS\fthibault]
+    WITH DEFAULT_SCHEMA = [UNIVERSITAS\fthibault];
+

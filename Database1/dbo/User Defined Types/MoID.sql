@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoID]
+    FROM INT NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoID] TO PUBLIC;
+

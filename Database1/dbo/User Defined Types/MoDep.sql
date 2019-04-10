@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoDep]
+    FROM CHAR (1) NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoDep] TO PUBLIC;
+

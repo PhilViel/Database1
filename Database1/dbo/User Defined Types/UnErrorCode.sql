@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[UnErrorCode]
+    FROM SMALLINT NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[UnErrorCode] TO PUBLIC;
+

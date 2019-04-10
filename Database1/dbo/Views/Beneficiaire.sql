@@ -1,0 +1,28 @@
+﻿CREATE VIEW [dbo].[Beneficiaire] AS
+SELECT
+[BeneficiaryID] AS HumanID,
+[CollegeID],
+[ProgramID],
+[TutorName],
+[GovernmentGrantForm],
+[PersonalInfo],
+[BirthCertificate],
+[StudyStart],
+[ProgramLength],
+[ProgramYear],
+[RegistrationProof],
+[SchoolReport],
+[EligibilityQty],
+[CaseOfJanuary],
+[iTutorID],
+[bTutorIsSubscriber],
+[bAddressLost],
+[vcPCGSINorEN],
+[vcPCGFirstName],
+[vcPCGLastName],
+[tiPCGType],
+[bPCGIsSubscriber],
+[tiCESPState],
+[EligibilityConditionID],
+[bConsentement]
+FROM [dbo].[Un_Beneficiary]

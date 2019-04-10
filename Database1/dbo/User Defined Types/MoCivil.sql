@@ -1,0 +1,8 @@
+﻿CREATE TYPE [dbo].[MoCivil]
+    FROM CHAR (1) NOT NULL;
+
+
+GO
+GRANT REFERENCES
+    ON TYPE::[dbo].[MoCivil] TO PUBLIC;
+

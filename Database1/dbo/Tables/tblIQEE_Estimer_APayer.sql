@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[tblIQEE_Estimer_APayer] (
+    [iID_Estimer_APayer]      INT          IDENTITY (1, 1) NOT NULL,
+    [tiID_TypeEnregistrement] TINYINT      NULL,
+    [iID_SousType]            INT          NULL,
+    [iID_Plan]                INT          NOT NULL,
+    [siAnnee_Cohorte]         SMALLINT     NOT NULL,
+    [iID_Convention]          INT          NULL,
+    [vcNo_Convention]         VARCHAR (15) NOT NULL,
+    [iID_Beneficiaire]        INT          NOT NULL,
+    [siAnnee_Fiscale]         SMALLINT     NOT NULL,
+    [iID_Evenement]           INT          NULL,
+    [dtEvenement]             DATE         NULL,
+    [tiVersion]               TINYINT      NULL,
+    [cStatut]                 CHAR (1)     NULL,
+    [mMontant_Retire]         MONEY        NULL,
+    [mMontant_AyantEuDroit]   MONEY        NULL,
+    [mCreditBase_Estime]      MONEY        NOT NULL,
+    [mMajoration_Estime]      MONEY        NOT NULL,
+    [mTotal_Estime]           MONEY        NOT NULL,
+    [dtFin_APayer]            DATE         NOT NULL,
+    [dtCreation]              DATETIME     NOT NULL,
+    CONSTRAINT [PK_tblIQEE_Estimer_APayer] PRIMARY KEY CLUSTERED ([iID_Estimer_APayer] ASC),
+    CONSTRAINT [FK_IQEE_EstimerAPayer_Convention__iIDConvention] FOREIGN KEY ([iID_Convention]) REFERENCES [dbo].[Un_Convention] ([ConventionID])
+);
+
