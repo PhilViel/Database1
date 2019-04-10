@@ -109,7 +109,7 @@ BEGIN
 
 	CLOSE crVerticalObject
 	DEALLOCATE crVerticalObject
-	PRINT 'l'
+	PRINT 'lnsnfksf'
 	-- Fin des traitements
 	RETURN
 END
